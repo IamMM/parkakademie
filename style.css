@@ -1,0 +1,98 @@
+/*
+Theme Name: Parkakademie
+Author: Maximilian Maske
+Description: Parkakademie Theme
+Version: 1.0
+*/
+
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts: http://www.fontshop.com
+*/
+
+/*
+* Globals
+*/
+
+body {
+  font-family: "Avenir", sans-serif;
+  color: #000;
+  overflow-x: hidden;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 40pt;
+}
+
+h2, h3 {
+  font-size: 30pt;
+  line-height: 34pt;
+}
+
+h3 {
+}
+
+h4, .h4 {
+  font-size: 15pt;
+}
+
+a {
+  color: #000;
+}
+
+a:hover, a:focus {
+  color: #6a6a6a;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  width: 80%;
+  padding: 0;
+}
+
+.main-container {
+  margin-top: 80px;
+}
+
+/* CUSTOM */
+.title {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Nav Bar */
+.navbar {
+  text-transform: uppercase;
+  color: black;
+  display: block;
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-toggler {
+  color: black;
+  border: none;
+  position: absolute;
+  left: 0;
+}
+
+.head,
+.navbar-collapse {
+  border-bottom: 0.5px solid black;
+}
+
+/* FOOTER */
+footer {
+  border-top: 0.5pt solid black;
+}
+
+footer ul {
+  list-style: none;
+}
+
