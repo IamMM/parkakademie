@@ -22,28 +22,30 @@
 
   </head>
   <body>
-    
-      
-     <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+
+
+    <nav class="navbar navbar-expand-sm navbar-light">
+
+      <div class="head mx-auto text-center align-middle">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <div class="head mx-auto">
-         <p class="title text-center">Parkakademie</p>
-        </div>
 
-          <?php
-            wp_nav_menu( array(
-                'menu'              => 'primary',
-                'theme_location'    => 'primary',
-                'depth'             => 2,
-                'container'         => 'div',
-                'container_class'   => 'collapse navbar-collapse justify-content-md-center',
-                'container_id'      => 'main-nav',
-                'menu_class'        => 'nav navbar-nav',
-                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                'walker'            => new WP_Bootstrap_Navwalker())
-            );
-        ?>
-      </nav>
+        <p class="title "><?php bloginfo('name'); ?></p>
+        <p class="sub-title"><?php bloginfo('description'); ?></p>
+      </div>
+
+      <?php
+      wp_nav_menu( array(
+        'menu'              => 'primary',
+        'theme_location'    => 'primary',
+        'depth'             => 2,
+        'container'         => 'div',
+        'container_class'   => 'collapse navbar-collapse justify-content-sm-center',
+        'container_id'      => 'main-nav',
+        'menu_class'        => 'nav navbar-nav',
+        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+        'walker'            => new WP_Bootstrap_Navwalker())
+                 );
+      ?>
+    </nav>

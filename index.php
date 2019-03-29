@@ -10,8 +10,8 @@
   <?php endwhile; ?>
   <?php else : ?>
   <p><?php__('Keinen Beitrag gefunden'); ?></p>
+<?php endif; ?>
 
 </div>
-<?php endif; ?>
 
 <?php get_footer();?>
