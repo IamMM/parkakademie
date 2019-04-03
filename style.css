@@ -24,15 +24,15 @@ h1 {
   font-size: 40pt;
 }
 
-h2, h3 {
-  font-size: 30pt;
-  line-height: 34pt;
+h2 {
+  font-size: 25pt;
 }
 
 h3 {
+  font-size: 15pt;
 }
 
-h4, .h4 {
+h4 {
   font-size: 15pt;
 }
 
@@ -46,7 +46,7 @@ a:hover, a:focus {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 992px;
   width: 80%;
   padding: 0;
 }

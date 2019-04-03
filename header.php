@@ -17,6 +17,10 @@
 
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+    
+     <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/swiper.css">
 
     <?php wp_head();?>
 
