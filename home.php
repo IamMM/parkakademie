@@ -26,7 +26,7 @@ Template Name: Startseite
 
 
   <!-- Slider main container -->
-  <div class="swiper-container">
+  <div class="swiper-container news">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
 
@@ -34,10 +34,10 @@ Template Name: Startseite
       <?php while(have_posts()) : the_post(); ?>
       <!-- Slides -->
       <div class="swiper-slide">
-        <div class="swiper-img" style="background-image: url(<?php the_post_thumbnail_url( 'large' ); ?>"></div>
-
-        <h3 class="mt-2"><?php the_title(); ?></h3>
-        <?php the_excerpt('20'); ?>
+        <a href="<?php the_permalink() ?>">
+          <div class="swiper-img" style="background-image: url(<?php the_post_thumbnail_url( 'large' ); ?>"></div>
+          <h3 class="mt-2"><?php the_title(); ?></h3>
+          <?php the_excerpt('20'); ?></a>
       </div><!-- .swiper-slide -->
 
       <?php endwhile; ?>
@@ -55,3 +55,23 @@ Template Name: Startseite
 </div>
 
 <?php get_footer();?>
+
+
+<script>
+  /*----- Swiper functions ------*/
+  var mySwiper = new Swiper ('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 15,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>

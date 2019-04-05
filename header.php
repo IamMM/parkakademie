@@ -15,13 +15,12 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
     
-     <!-- Swiper -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/swiper.css">
-
     <?php wp_head();?>
 
   </head>
@@ -35,8 +34,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <p class="title "><?php bloginfo('name'); ?></p>
-        <p class="sub-title"><?php bloginfo('description'); ?></p>
+        <a href="/"><p class="title "><?php bloginfo('name'); ?></p>
+          <p class="sub-title"><?php bloginfo('description'); ?></p></a>
+
       </div>
 
       <?php
