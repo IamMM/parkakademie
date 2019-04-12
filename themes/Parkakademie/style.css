@@ -1,5 +1,6 @@
 @import url("css/adjust-swiper.css");
 @import url("css/adjust-tb-search.css");
+@import url("css/adjust-event-list.css");
 
 /*
 Theme Name: Parkakademie
@@ -19,8 +20,6 @@ This CSS resource incorporates links to font software which is the valuable copy
 
 body {
   font-family: "Avenir", sans-serif;
-  color: #000;
-  overflow-x: hidden;
   font-size: 15px;
 }
 
@@ -96,6 +95,14 @@ hr {
   transform: translate(0, -50%);
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+}
+
 .head {
   min-height: 70px;
 }
@@ -133,10 +140,9 @@ hr {
 }
 
 /* FOOTER */
-footer {
+footer{
   border-top: 0.5pt solid black;
   padding: 30px 0;
-
 }
 
 footer ul {

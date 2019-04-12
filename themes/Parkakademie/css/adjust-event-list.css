@@ -1,0 +1,14 @@
+li.event {
+  border-bottom: 1px solid black;
+}
+
+.event-list 
+.startdate, 
+.event-list 
+.enddate {
+  background-color: transparent!important; 
+}
+
+.event-content {
+  font-size: inherit!important;
+}

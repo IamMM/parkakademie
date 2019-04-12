@@ -6,7 +6,7 @@ Template Name: Startseite
 
 <?php get_header();?>
 
-<div class ="container">
+<div id="main-container" class ="container">
 
   <!-- The Featured Image -->
   <div class="wp-block-cover" style="background-image:url( <?php the_post_thumbnail_url('full'); ?>)"></div>
@@ -27,7 +27,7 @@ Template Name: Startseite
 
 
   <!-- Slider main container -->
-  <div class="swiper-container">
+  <div class="swiper-container activity-swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
 
@@ -52,6 +52,9 @@ Template Name: Startseite
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div><!-- .swiper-container -->
+
+  <!-- Events -->
+  <?php echo do_shortcode('[event-list num_events=10 show_filterbar=false content_length=300]') ?>
 
 </div>
 

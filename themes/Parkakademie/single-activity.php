@@ -32,7 +32,7 @@ get_header();  ?>
     <div class="tab-pane fade show active" id="bilder" role="tabpanel" aria-labelledby="bilder-tab">
 
       <!-- Slider main container -->
-      <div class="swiper-container">
+      <div class="swiper-container swiper-media-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <?php 
@@ -60,7 +60,7 @@ get_header();  ?>
     <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
 
       <!-- Slider main container -->
-      <div class="swiper-container">
+      <div class="swiper-container swiper-media-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
 
