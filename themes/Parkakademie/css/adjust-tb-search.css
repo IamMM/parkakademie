@@ -19,8 +19,16 @@
   display: none;
 }
 
+.search-field {
+  width: 80%!important;
+}
+
 @media (max-width: 576px) { 
   .tb-search {
     position: inherit;
+  }
+  
+  .search-field {
+    width: 90%!important;
   }
 }
