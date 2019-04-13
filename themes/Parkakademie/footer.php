@@ -1,7 +1,7 @@
-<footer class="mt-5">
+<footer style="margin-top: 100px;">
   <div class="container">
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-9">
         <p>Bauhütte Südliche Friedrichstadt <br> 
           Besselstraße 1 <br>
           10969 Berlin</p>
