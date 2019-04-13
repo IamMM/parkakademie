@@ -38,7 +38,7 @@ Template Name: Startseite
         <a href="<?php the_permalink() ?>">
           <div class="activity-img-container" style="background-image: url(<?php the_post_thumbnail_url( 'large' ); ?>"></div>
           <h3 class="mt-2"><?php the_title(); ?></h3>
-          <?php the_excerpt('20'); ?></a>
+          <?php echo the_excerpt(); ?></a>
       </div><!-- .swiper-slide -->
 
       <?php endwhile; ?>
@@ -54,7 +54,8 @@ Template Name: Startseite
   </div><!-- .swiper-container -->
 
   <!-- Events -->
-  <?php echo do_shortcode('[event-list num_events=10 show_filterbar=false content_length=300]') ?>
+  <?php query_posts('post_type=event'); ?>
+  <?php echo do_shortcode('[event-list num_events=10 initial_date=all initial_order=date_desc show_filterbar=false content_length=300]') ?>
 
 </div>
 
