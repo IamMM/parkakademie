@@ -444,7 +444,8 @@ class SC_Event_List {
 	}
 
 	private function get_event_url(&$a, $event_id) {
-		return esc_html(add_query_arg('event_id'.$a['sc_id_for_url'], $event_id, $this->get_url($a)));
+// 		return esc_html(add_query_arg('event_id'.$a['sc_id_for_url'], $event_id, $this->get_url($a)));
+		return get_permalink($event_id); // solution from https://wordpress.org/support/topic/shortcode-permalink-not-working/
 	}
 
 	private function get_url(&$a) {
