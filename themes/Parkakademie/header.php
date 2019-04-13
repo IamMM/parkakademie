@@ -27,7 +27,7 @@
   <body>
 
 
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-sm">
 
       <div class="head mx-auto text-center align-middle">
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
