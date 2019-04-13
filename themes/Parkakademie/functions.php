@@ -16,8 +16,8 @@ register_nav_menus(array('primary' => __('Primary Menu')));
  * @return int (Maybe) modified excerpt length.
  */
 function wpdocs_custom_excerpt_length( $length ) {
-    return 15;
+    return 40;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
-  
+
 ?>
