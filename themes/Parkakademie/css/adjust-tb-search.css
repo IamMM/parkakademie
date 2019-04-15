@@ -1,34 +1,42 @@
 /* SEARCH */
-.tb-search {
-  background-color: transparent !important;
-  color: #676767 !important;
-  position: absolute;
-  top: 35px;
-  transform: translate(0,-25%);
-  right: 15px;
-  font-size: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.tb-search-inner {
-  top: 20% !important;
-}
-
-.screen-reader-text {
+.tb-menu-search {
   display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.tb-search-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 992px;
 }
 
-.search-field {
-  width: 80%!important;
+.search-close {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  cursor: pointer;
 }
 
-@media (max-width: 576px) { 
-  .tb-search {
-    position: inherit;
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .tb-menu-search .search-field {
+    font-size: 18px;
   }
-  
-  .search-field {
-    width: 90%!important;
+}
+@media screen and (max-width: 360px) {
+  .tb-menu-search .search-field {
+    font-size: 14px;
   }
+  .search-close {
+    top: 35px;
+    right: 30px;
+  }  
 }
