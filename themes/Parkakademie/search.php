@@ -3,10 +3,12 @@
 
 <div class="column span-9 first" id="maincontent">
 
-  <div class="container mt-5">
+  <div class="container">
 
-    <?php include (TEMPLATEPATH . '/searchform.php'); ?>
-
+    <div class="mt-5 mb-5">
+      <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+    </div>
+    
     <?php if (have_posts()) : ?>
 
     <?php while (have_posts()) : the_post(); ?>
