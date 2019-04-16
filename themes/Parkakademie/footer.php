@@ -1,12 +1,12 @@
 <footer style="margin-top: 100px;">
   <div class="container">
-    <div class="row">
-      <div class="col-md-9">
+    <div class="d-flex justify-content-between flex-wrap">
+      <div>
         <p>Bauhütte Südliche Friedrichstadt <br> 
           Besselstraße 1 <br>
           10969 Berlin</p>
       </div>
-      <div class="col-md-3">
+      <div>
         <ul style="padding: 0;">
           <li><a href="mailto:info@parkakademie.org">&rsaquo; Mail</a></li>
           <li><a href="https://www.facebook.com/parkakademie/" target="_blank">&rsaquo; Facebook</a></li>
@@ -14,11 +14,7 @@
         </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <p>&copy; Parkakademie 2019</p>
-      </div>    
-    </div>
+    <p>&copy; Parkakademie 2019</p>
   </div>
 
 </footer>
