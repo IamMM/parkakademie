@@ -1,5 +1,5 @@
 /* SEARCH */
-.tb-menu-search {
+.menu-search {
   display: none;
   position: fixed;
   width: 100%;
@@ -9,7 +9,7 @@
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.tb-search-inner {
+.search-inner {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -20,8 +20,8 @@
 
 .search-close {
   position: absolute;
-  top: 60px;
-  right: 60px;
+  top: 35px;
+  right: 35px;
   cursor: pointer;
 }
 

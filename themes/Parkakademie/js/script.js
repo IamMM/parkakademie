@@ -22,17 +22,17 @@
 
 // SEARCH
 jQuery(function($) {
-	var tbSearch = $('.tb-menu-search');
-    $('#tb-search-item').click(function(e) {
+	var tbSearch = $('.menu-search');
+    $('#search-button').click(function(e) {
         e.preventDefault();
-        $('.tb-menu-search').addClass('tb-search-active').fadeIn(200);
+        $('.menu-search').addClass('search-active').fadeIn(200);
     });
-    $('.tb-close').click(function() {
-        $('.tb-menu-search').fadeOut(200);
+    $('.close').click(function() {
+        $('.menu-search').fadeOut(200);
     });
 	$(document).on('keyup',function(evt) {
-	    if ($( '#tb-search' ).hasClass('tb-search-active') && evt.keyCode == 27) {
-	       $('.tb-menu-search').fadeOut(200);
+	    if ($( '#search' ).hasClass('search-active') && evt.keyCode == 27) {
+	       $('.menu-search').fadeOut(200);
 	    }
 	});
 });
