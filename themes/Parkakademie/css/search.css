@@ -16,22 +16,19 @@
 }
 
 #search-button {
-  background: transparent;
+  background-image: url(../icons/search.svg);
+  background-color: transparent;
+  background-size: 100% 100%;
   border: none;
-  padding: .25rem .75rem;
-}
-
-#search-button svg, 
-.search-close svg {
   width: 25px;
   height: 25px;
+  cursor: pointer;
+  opacity: .5;
 }
 
-.nav-search-button svg {
-  width: 25px;
-  position: absolute;
-  top: 30px;
-  right: 30px;
+#search-button:hover {
+  opacity: 1;
+  transition: 500ms;
 }
 
 /* SEARCH */
@@ -59,6 +56,14 @@
   top: 35px;
   right: 35px;
   cursor: pointer;
+}
+
+.icon-cancel {
+  background-image: url(../icons/close.svg);
+  background-color: transparent;
+  background-size: 100% 100%;
+  width: 25px;
+  height: 25px;
 }
 
 /* Responsive */

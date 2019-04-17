@@ -88,6 +88,7 @@ hr {
   border: none;
 }
 
+/*
 .sticky {
   position: fixed;
   top: 0;
@@ -95,6 +96,7 @@ hr {
   z-index: 10;
   background-color: white;
 }
+*/
 
 .head {
   min-height: 70px;
@@ -110,14 +112,24 @@ hr {
   padding-left: 10px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-  font-weight: normal; 
+.navbar-toggler-icon {
+  background-image: url(icons/menu.svg);
+  background-color: transparent;
+  background-size: 100% 100%;
+  border: none;
+  width: 25px;
+  opacity: .5;
 }
 
-.navbar-light .current-menu-item .nav-link{
+.navbar-toggler-icon:hover {
+  opacity: 1;
+  transition: 500ms;
+}
+
+.current-menu-item .nav-link{
   font-weight: bolder;
 }
+
 /* Medien-Board Tabs */
 .media-tabs {
   border-bottom: 1px solid black;

@@ -12,9 +12,7 @@
              onFocus="clearInput('s', '<?php echo wp_specialchars($search_text, 1); ?>')" 
              onBlur="clearInput('s', '<?php echo wp_specialchars($search_text, 1); ?>')"
              />
-      <button id="search-button" style="display: flex;">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16.67 16.76"><defs><style>.cls-1,.cls-5{fill:none;}.cls-2{opacity:0.8;}.cls-3{clip-path:url(#clip-path);}.cls-4{fill:#fff;}.cls-5{stroke:#1d1d1b;}.cls-6{clip-path:url(#clip-path-2);}</style><clipPath id="clip-path" transform="translate(-1 -1)"><rect class="cls-1" x="3.94" width="14.72" height="14.72"/></clipPath><clipPath id="clip-path-2" transform="translate(-1 -1)"><rect class="cls-1" y="9.82" width="8.94" height="8.94"/></clipPath></defs><title>Asset 3</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><g class="cls-3"><path class="cls-4" d="M11.3,13.22A5.86,5.86,0,1,0,5.45,7.36a5.86,5.86,0,0,0,5.86,5.86" transform="translate(-1 -1)"/><circle class="cls-5" cx="10.31" cy="6.36" r="5.86"/></g></g><g class="cls-2"><g class="cls-6"><line class="cls-5" x1="6.59" y1="10.17" x2="0.35" y2="16.41"/></g></g></g></g></svg>
-      </button>
+      <button id="search-button" style="display: flex;"></button>
     </div>
   </form>
 </div>
