@@ -112,6 +112,15 @@ hr {
   padding-left: 10px;
 }
 
+.icon {
+  min-width: 25px;
+  min-height: 25px;
+}
+
+.icon button {
+  padding: 0;
+}
+
 .navbar-toggler-icon {
   background-image: url(icons/menu.svg);
   background-color: transparent;

@@ -30,7 +30,7 @@
     <nav class="navbar navbar-expand-sm">
 
       <div class="head text-center d-flex justify-content-around align-items-center">
-        <div style="min-width: 49px;"> <!-- min-width for justify content (width = search-button) -->
+        <div class="icon">
           <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,7 +41,9 @@
             <p class="sub-title"><?php bloginfo('description'); ?></p></a>
         </div>
 
-        <button id="search-button"></button>
+        <div class="icon">
+          <button id="search-button"></button>
+        </div>
 
         <!-- OVERLAY -->
         <div id="search" class="menu-search search-active" style="display: none;">
