@@ -43,6 +43,11 @@ a {
 a:hover, a:focus {
   color: #6a6a6a;
   text-decoration: none;
+  transition: 500ms;
+}
+
+.head a:hover {
+  color: white;
 }
 
 .container {
@@ -59,6 +64,13 @@ hr {
   border-top: 1px solid black;
 }
 
+/* BACKGROUND */
+#main-container,
+footer,
+nav {
+  background-color: white;
+}
+
 /* CUSTOM */
 .title {
   font-size: 66px;
@@ -70,6 +82,10 @@ hr {
   font-size: 12pt;
   font-weight: bold;
   margin: -30px 0 10px 0;
+}
+
+#main-container {
+  padding: 0 15px 30px;
 }
 
 /* Nav Bar */
@@ -101,6 +117,7 @@ hr {
 
 .head {
   min-height: 70px;
+  background-color: rgb(251, 20, 115);
 }
 
 .head,

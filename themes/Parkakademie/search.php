@@ -3,7 +3,7 @@
 
 <div class="column span-9 first" id="maincontent">
 
-  <div class="container">
+  <div id="main-container" class="container">
 
     <div class="mt-5 mb-5">
       <?php include (TEMPLATEPATH . '/searchform.php'); ?>

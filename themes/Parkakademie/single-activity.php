@@ -26,7 +26,7 @@ get_header();  ?>
   }
 </style>
 
-<div class="container">
+<div id="main-container" class="container">
 
   <div class="tab-content" id="Medien-Board">
     <div class="tab-pane fade show active" id="bilder" role="tabpanel" aria-labelledby="bilder-tab">

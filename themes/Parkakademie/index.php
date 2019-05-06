@@ -2,8 +2,8 @@
 
 <?php if(have_posts()) : ?>
 <?php while(have_posts()) : the_post(); ?>
-<div class ="container mt-3 mb-5">
-  <h1 class="text-center"><?php the_title(); ?></h1>
+<div id="main-container" class ="container pt-5 mb-5">
+  <h2 class="text-center"><?php the_title(); ?></h2>
   <hr>
   <?php the_content(); ?>
   <?php endwhile; ?>

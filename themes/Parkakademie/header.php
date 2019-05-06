@@ -24,8 +24,8 @@
     <?php wp_head();?>
 
   </head>
-  <body>
-
+  
+  <body class="custom-background">
 
     <nav class="navbar navbar-expand-sm">
 
@@ -47,7 +47,7 @@
 
         <!-- OVERLAY -->
         <div id="search" class="menu-search search-active" style="display: none;">
-          <div class="container">
+          <div class="container" style="height:100%;">
             <div class="search-close">
               <span class="icon-cancel close"></span>
             </div>

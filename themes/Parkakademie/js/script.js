@@ -22,7 +22,6 @@
 
 // SEARCH
 jQuery(function($) {
-	var tbSearch = $('.menu-search');
     $('#search-button').click(function(e) {
         e.preventDefault();
         $('.menu-search').addClass('search-active').fadeIn(200);

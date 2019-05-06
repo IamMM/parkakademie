@@ -7,20 +7,16 @@ Template Name: Aktivitäten
 <?php get_header();?>
 
 <!-- The Content -->
-<div class="container mt-3">
+<div id="main-container" class="container pt-5">
   <?php 
   $post_object = get_post( get_the_ID() );
   echo $post_object->post_content;
   ?>
-</div>
 
 <!-- AKTIVITÄTEN Post Lop-->
 <?php // Display blog posts on any page @ https://m0n.co/l
 $temp = $wp_query; $wp_query= null;
 $wp_query = new WP_Query(); $wp_query->query('posts_per_page=20' . '&paged='.$paged);?>
-
-
-<div class="container">
 
   <div id= "ajax" class="row">
     <?php if(have_posts()) : ?>
