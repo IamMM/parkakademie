@@ -6,11 +6,12 @@ Template Name: Startseite
 
 <?php get_header();?>
 
-<div id="main-container" class ="container">
-
-  <!-- The Featured Image -->
+<!-- The Featured Image -->
+<div class="container">
   <div class="wp-block-cover" style="background-image:url( <?php the_post_thumbnail_url('full'); ?>)"></div>
-  <!--  <?php the_post_thumbnail_url('full', array('class' => 'img-fluid')); ?>-->
+</div>
+
+<div id="main-container" class ="container mt-4 pt-4">
 
   <!-- The Content -->
   <div class="mt-3">

@@ -6,7 +6,7 @@ Template Name: Über Uns
 
 <?php get_header();?>
 
-<div id="main-container" class="container pt-5">
+<div id="main-container" class="container mt-4 pt-4">
 
   <?php if(have_posts()) : ?>
   <?php while(have_posts()) : the_post(); ?>   

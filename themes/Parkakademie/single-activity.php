@@ -107,7 +107,7 @@ get_header();  ?>
 
 <?php if(have_posts()) : ?>
 <?php while(have_posts()) : the_post(); ?>
-<div class ="container mt-4">
+<div id="main-container" class ="container mt-4 pt-4">
   <h2 class="text-center"><?php the_title(); ?></h2>
 
   <div><?php the_content(); ?></div>

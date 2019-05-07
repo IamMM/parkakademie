@@ -5,7 +5,7 @@
 
   <div id="main-container" class="container">
 
-    <div class="mt-5 mb-5">
+    <div class="mt-4 pt-4 mb-5">
       <?php include (TEMPLATEPATH . '/searchform.php'); ?>
     </div>
     
