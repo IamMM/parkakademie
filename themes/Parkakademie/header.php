@@ -29,20 +29,28 @@
 
     <nav class="navbar navbar-expand-sm">
 
-      <div class="head text-center d-flex justify-content-around align-items-center">
-        <div class="icon">
+      <div class="head text-center align-items-center row">
+        <div class="icon col-2">
           <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
 
-        <div class="d-flex">
+        <div class="col-8">
           <a href="/"><p class="title "><?php bloginfo('name'); ?></p>
             <p class="sub-title"><?php bloginfo('description'); ?></p></a>
         </div>
 
-        <div class="icon">
-          <button id="search-button"></button>
+        <div class="icons col-2">
+          <div class="icon">
+            <a id="search-button" class="btn"></a>
+          </div>
+          <div class="icon d-none d-md-inline">
+            <a id="facebook-button" class="btn" href="https://www.facebook.com/parkakademie/" target="_blank"></a>
+          </div>
+          <div class="icon d-none d-md-inline">
+            <a id="instagram-button" class="btn" href="https://www.instagram.com/explore/locations/295354281145717/parkakademie/" target="_blank"></a>
+          </div>
         </div>
 
         <!-- OVERLAY -->
