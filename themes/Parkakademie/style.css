@@ -17,7 +17,7 @@ Version: 1.0
 
 body {
   font-family: "Avenir", sans-serif;
-  font-size: 10pt;
+  font-size: 12pt;
 }
 
 h1 {
@@ -93,6 +93,7 @@ nav {
   color: black;
   display: block;
   padding: 0;
+  font-size: 10pt;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -107,11 +108,11 @@ nav {
 
 /*
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  background-color: white;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 10;
+background-color: white;
 }
 */
 
@@ -231,7 +232,7 @@ footer ul {
     font-size: 3vw;
     margin: -3vw 0 0 0;
   }
-  
+
   .featurette img {
     padding: 10px 40px 0;
   }
