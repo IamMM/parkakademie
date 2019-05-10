@@ -7,7 +7,7 @@ Template Name: Aktivitäten
 <?php get_header();?>
 
 <!-- The Content -->
-<div id="main-container" class="container pt-4">
+<div id="main-container" class="container">
   <?php 
   $post_object = get_post( get_the_ID() );
   echo $post_object->post_content;

@@ -66,6 +66,7 @@ hr {
 
 /* BACKGROUND */
 #main-container,
+#top-container,
 footer,
 nav {
   background-color: white;
@@ -85,7 +86,8 @@ nav {
 }
 
 #main-container {
-  padding: 0 15px 30px;
+  padding: 1.5rem;
+  margin: 1.5rem auto 3rem auto;
 }
 
 /* Nav Bar */

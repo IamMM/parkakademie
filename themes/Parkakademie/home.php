@@ -11,7 +11,7 @@ Template Name: Startseite
   <div class="wp-block-cover" style="background-image:url( <?php the_post_thumbnail_url('full'); ?>)"></div>
 </div>
 
-<div id="main-container" class ="container mt-4 pt-4">
+<div id="main-container" class ="container">
 
   <!-- The Content -->
   <div class="mt-3">

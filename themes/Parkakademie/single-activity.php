@@ -26,7 +26,7 @@ get_header();  ?>
   }
 </style>
 
-<div id="main-container" class="container">
+<div id="top-container" class="container">
 
   <div class="tab-content" id="Medien-Board">
     <div class="tab-pane fade show active" id="bilder" role="tabpanel" aria-labelledby="bilder-tab">
@@ -107,7 +107,7 @@ get_header();  ?>
 
 <?php if(have_posts()) : ?>
 <?php while(have_posts()) : the_post(); ?>
-<div id="main-container" class ="container pt-4">
+<div id="main-container" class ="container">
   <h2 class="text-center"><?php the_title(); ?></h2>
 
   <div><?php the_content(); ?></div>

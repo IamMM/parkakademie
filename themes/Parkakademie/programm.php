@@ -6,7 +6,7 @@ Template Name: Programm
 
 <?php get_header();?>
 
-<div id="main-container" class="container pt-4">
+<div id="main-container" class="container">
 
   <!-- The Content -->
   <div class="mb-5">
