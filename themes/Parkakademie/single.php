@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<div id="main-container" class="container pt-4">
+<div id="main-container" class="container mt-4 pt-4">
   <!-- The Featured Image -->
     <div class="wp-block-cover" style="background-image:url( <?php the_post_thumbnail_url('full'); ?>)"></div>
     <!--  <?php the_post_thumbnail_url('full', array('class' => 'img-fluid')); ?>-->
