@@ -119,6 +119,7 @@ background-color: white;
 .head {
   min-height: 70px;
   background-color: rgb(251, 20, 115);
+  margin: 0; /* row margin workaround */
 }
 
 .head,
