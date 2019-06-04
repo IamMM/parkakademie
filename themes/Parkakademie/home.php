@@ -56,7 +56,7 @@ Template Name: Startseite
 
   <!-- Events -->
   <?php query_posts('post_type=event'); ?>
-  <?php echo do_shortcode('[event-list num_events=10 initial_date=all initial_order=date_desc show_filterbar=false content_length=300]') ?>
+  <?php echo do_shortcode('[event-list initial_date=upcoming initial_order=date_asc content_length=300]') ?>
 
 </div>
 
