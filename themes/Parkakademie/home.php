@@ -53,10 +53,11 @@ Template Name: Startseite
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div><!-- .swiper-container -->
-
-  <!-- Events -->
+	
+	 <!-- Events -->
   <?php query_posts('post_type=event'); ?>
-  <?php echo do_shortcode('[event-list initial_date=upcoming initial_order=date_asc content_length=300]') ?>
+  <?php echo do_shortcode('[event-list show_filterbar=false initial_date=upcoming initial_order=date_asc content_length=300]') ?>
+
 
 </div>
 
