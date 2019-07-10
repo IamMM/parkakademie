@@ -6,12 +6,30 @@ Template Name: Startseite
 
 <?php get_header();?>
 
-<!-- The Featured Image -->
+<!-- The Featured Image Slide -->
 <div class="container">
-  <div class="wp-block-cover" style="background-image:url( <?php the_post_thumbnail_url('full'); ?>)"></div>
+ 
+ <!-- Slider main container -->
+      <div class="swiper-container welcome-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <?php 
+
+          $images = get_field('bilder');
+          $size = 'full'; // (thumbnail, medium, large, full or custom size)
+
+          if( $images ): ?>
+          <?php foreach( $images as $image ): ?>
+          <div class="swiper-slide wp-block-cover" style="background-image:url(<?php echo $image['url']; ?>); min-height: 430px;">
+          </div><!-- .swiper-slide -->
+          <?php endforeach; ?>
+          <?php endif; ?>
+
+        </div><!-- .swiper-wrapper -->
+      </div><!-- .swiper-container -->  
 </div>
 
-<div id="main-container" class ="container">
+<div class ="container">
 
   <!-- The Content -->
   <div class="mt-3">
@@ -65,8 +83,18 @@ Template Name: Startseite
 
 
 <script>
-  /*----- Swiper functions ------*/
-  var mySwiper = new Swiper ('.swiper-container', {
+  /*----- WELCOME Swiper functions ------*/
+  var welcomeSwiper = new Swiper ('.welcome-swiper', {
+    slidesPerView: 1,
+    loop: true,
+    allowTouchMove: false,
+    autoplay: {
+    delay: 5000,
+    }
+    });
+  
+  /*----- AKTIVITÄTEN Swiper functions ------*/
+  var activitySwiper = new Swiper ('.activity-swiper', {
     slidesPerView: 3,
     spaceBetween: 15,
     slidesPerGroup: 3,
