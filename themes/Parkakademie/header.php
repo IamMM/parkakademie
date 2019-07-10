@@ -7,7 +7,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="author" content="<?php bloginfo('author'); ?>">
-    <link rel="icon" href="../../favicon.ico">
 
     <title><?php bloginfo('name'); ?> | 
       <?php is_front_page() ? bloginfo('description') : wp_title(); ?></title>
