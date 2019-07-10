@@ -10,6 +10,8 @@ Template Name: Programm
 
   <!-- The Content -->
   <div class="mb-5">
+    <h1 class="text-center"><?php the_title(); ?></h1>
+    <hr>
     <?php 
     $post_object = get_post( get_the_ID() );
     echo $post_object->post_content;
