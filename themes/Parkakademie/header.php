@@ -29,10 +29,8 @@
     <nav class="navbar navbar-expand-sm">
 
       <div class="head text-center align-items-center row">
-        <div class="icon col-2">
-          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="logo col-2">
+          <a href="/"><img src="<?php bloginfo('template_directory') ?>/img/logo_grafik.png" alt="Logo"></a>
         </div>
 
         <div class="col-8">
@@ -41,8 +39,8 @@
         </div>
 
         <div class="icons col-2">
-          <div class="icon">
-            <a id="search-button" class="btn"></a>
+          <div class="icon d-none d-sm-inline">
+            <a id="search-button" class="btn "></a>
           </div>
           <div class="icon d-none d-md-inline">
             <a id="facebook-button" class="btn" href="https://www.facebook.com/parkakademie/" target="_blank"></a>
@@ -50,6 +48,11 @@
           <div class="icon d-none d-md-inline">
             <a id="instagram-button" class="btn" href="https://www.instagram.com/explore/locations/295354281145717/parkakademie/" target="_blank"></a>
           </div>
+          
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
         </div>
 
         <!-- OVERLAY -->

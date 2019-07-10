@@ -134,9 +134,8 @@ background-color: white;
   padding-left: 10px;
 }
 
-.icon {
-  min-width: 25px;
-  min-height: 25px;
+.logo img{
+  max-height: 100px;
 }
 
 .icon button {
@@ -265,5 +264,9 @@ footer ul {
   .navbar-nav {
     text-align: center;
   }
+  
+  .logo img{
+  max-height: 50px;
+}
 }
 
