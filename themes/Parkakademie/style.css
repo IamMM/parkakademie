@@ -47,6 +47,10 @@ a:hover, a:focus {
 }
 
 .head a:hover {
+  color: rgb(251, 20, 115);
+}
+
+#main-nav a:hover {
   color: white;
 }
 
@@ -70,6 +74,10 @@ hr {
 footer,
 nav {
   background-color: white;
+}
+
+#main-nav {
+  background: rgb(251, 20, 115);
 }
 
 /* CUSTOM */
@@ -120,7 +128,7 @@ background-color: white;
 
 .head {
   min-height: 70px;
-  background-color: rgb(251, 20, 115);
+/*  background-color: rgb(251, 20, 115);*/
   margin: 0; /* row margin workaround */
 }
 
@@ -146,12 +154,29 @@ background-color: white;
   display: inline-block;
 }
 
+.head #search-button {
+  background-image: url(icons/search-pink.svg);
+  opacity: 1;
+}
+
+.head #search-button:hover {
+  background-image: url(icons/search.svg);
+}
+
 #facebook-button {
+  background-image: url(icons/facebook-pink.svg);
+}
+
+#facebook-button:hover {
   background-image: url(icons/facebook.svg);
 }
 
 #instagram-button {
-    background-image: url(icons/instagram.svg);
+  background-image: url(icons/instagram-pink.svg);
+}
+
+#instagram-button:hover {
+  background-image: url(icons/instagram.svg);
 }
 
 .navbar-toggler-icon {
@@ -167,13 +192,11 @@ background-color: white;
   width: 25px;
   min-height: 25px;
   cursor: pointer;
-  opacity: .5;
 }
 
 #facebook-button:hover,
 #instagram-button:hover,
 .navbar-toggler-icon:hover {
-  opacity: 1;
   transition: 500ms;
 }
 
@@ -191,6 +214,11 @@ background-color: white;
 }
 
 /* Activity Boxes */
+
+.activity-slide:hover {
+  background-color: lightgray;
+  transition: 500ms;
+}
 .activity-img-container{
   background-size: cover;
   background-position: center;
@@ -264,9 +292,9 @@ footer ul {
   .navbar-nav {
     text-align: center;
   }
-  
+
   .logo img{
-  max-height: 50px;
-}
+    max-height: 50px;
+  }
 }
 

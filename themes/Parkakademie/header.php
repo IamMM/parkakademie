@@ -30,7 +30,7 @@
 
       <div class="head text-center align-items-center row">
         <div class="logo col-2">
-          <a href="/"><img src="<?php bloginfo('template_directory') ?>/img/logo_grafik.png" alt="Logo"></a>
+          <a href="/"><img src="<?php bloginfo('template_directory') ?>/img/logo_grafik-pink.png" alt="Logo"></a>
         </div>
 
         <div class="col-8">
