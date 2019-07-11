@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Aktivitäten
+Template Name: Archiv
 */
 ?>
 
