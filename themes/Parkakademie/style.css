@@ -217,6 +217,22 @@ aspect ratio  | padding-bottom value
   overflow: hidden;
 }
 
+.welcome-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  background: rgb(255, 255, 255, 0.75);
+  padding: 10px;
+  color: black;
+}
+
+.welcome-text:hover, .welcome-text:focus{
+  background: rgb(251, 20, 115);
+  transition: 500ms;
+  color: black;
+}
+
 /* Medien-Board Tabs */
 .media-tabs {
   border-bottom: 1px solid black;
@@ -310,4 +326,3 @@ footer ul {
     max-height: 50px;
   }
 }
-

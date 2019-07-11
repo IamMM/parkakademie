@@ -8,25 +8,40 @@ Template Name: Startseite
 
 <!-- The Featured Image Slide -->
 <div class="container">
- 
- <!-- Slider main container -->
-      <div class="swiper-container welcome-swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <?php 
 
-          $images = get_field('bilder');
-          $size = 'full'; // (thumbnail, medium, large, full or custom size)
+  <!-- Slider main container -->
+  <div class="swiper-container welcome-swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <?php
 
-          if( $images ): ?>
-          <?php foreach( $images as $image ): ?>
-          <div class="swiper-slide ratio-16_9 cover" style="background-image:url(<?php echo $image['url']; ?>);">
-          </div><!-- .swiper-slide -->
-          <?php endforeach; ?>
-          <?php endif; ?>
+      // check if the repeater field has rows of data
+      if( have_rows('welcome_slider') ):
 
-        </div><!-- .swiper-wrapper -->
-      </div><!-- .swiper-container -->  
+      // loop through the rows of data
+      while ( have_rows('welcome_slider') ) : the_row(); ?>
+
+       <div class="swiper-slide ratio-16_9 cover" style="background-image:url(<?php echo the_sub_field('image'); ?>);">
+
+        <a class="welcome-text" href="<?php echo the_sub_field('link'); ?>">
+          <h2><?php echo the_sub_field('title'); ?></h2>
+          <p><?php echo the_sub_field('sub-title'); ?></p>
+        </a>
+
+      </div><!-- .swiper-slide -->
+     
+      <?php endwhile;
+
+      else :
+
+      // no rows found
+
+      endif;
+
+      ?>
+
+    </div><!-- .swiper-wrapper -->
+  </div><!-- .swiper-container -->  
 </div>
 
 <div class ="container">
@@ -71,8 +86,8 @@ Template Name: Startseite
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div><!-- .swiper-container -->
-	
-	 <!-- Events -->
+
+  <!-- Events -->
   <?php query_posts('post_type=event'); ?>
   <?php echo do_shortcode('[event-list show_filterbar=false initial_date=upcoming initial_order=date_asc content_length=300]') ?>
 
@@ -89,10 +104,11 @@ Template Name: Startseite
     loop: true,
     allowTouchMove: false,
     autoplay: {
-    delay: 5000,
-    }
-    });
-  
+      delay: 7000,
+      disableOnInteraction: true,
+    },
+  });
+
   /*----- AKTIVITÄTEN Swiper functions ------*/
   var activitySwiper = new Swiper ('.activity-swiper', {
     slidesPerView: 3,
