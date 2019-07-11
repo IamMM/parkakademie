@@ -12,3 +12,7 @@ li.event {
 .event-content {
   font-size: inherit!important;
 }
+
+.hlist {
+  padding-left: 0;
+}
