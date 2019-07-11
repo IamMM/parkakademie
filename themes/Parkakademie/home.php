@@ -20,7 +20,7 @@ Template Name: Startseite
 
           if( $images ): ?>
           <?php foreach( $images as $image ): ?>
-          <div class="swiper-slide wp-block-cover" style="background-image:url(<?php echo $image['url']; ?>); min-height: 430px;">
+          <div class="swiper-slide ratio-16_9 cover" style="background-image:url(<?php echo $image['url']; ?>);">
           </div><!-- .swiper-slide -->
           <?php endforeach; ?>
           <?php endif; ?>

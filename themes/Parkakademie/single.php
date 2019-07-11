@@ -2,7 +2,7 @@
 
 <div id="main-container" class="container">
   <!-- The Featured Image -->
-    <div class="wp-block-cover" style="background-image:url( <?php the_post_thumbnail_url('full'); ?>)"></div>
+    <div class="ratio-16_9 cover" style="background-image:url( <?php the_post_thumbnail_url('full'); ?>)"></div>
     <!--  <?php the_post_thumbnail_url('full', array('class' => 'img-fluid')); ?>-->
   
     <!-- The Content -->

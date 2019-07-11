@@ -2,14 +2,14 @@
 
 <?php get_header();?>
 
-<div id="main-container" class="container">
+<div class="container">
 
   <?php if (have_posts()) :
   while ( have_posts() ) : the_post(); ?>
 
   <!-- The Featured Image -->
   <?php if(has_post_thumbnail()) : ?>
-  <div class="wp-block-cover" style="background-image:url( <?php the_post_thumbnail_url('full'); ?>)"></div>
+  <div class="ratio-16_9 cover" style="background-image:url( <?php the_post_thumbnail_url('full'); ?>)"></div>
   <?php endif; ?>  
 
   <!-- The Content -->

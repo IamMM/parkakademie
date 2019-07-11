@@ -116,19 +116,9 @@ nav {
   border: none;
 }
 
-/*
-.sticky {
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 10;
-background-color: white;
-}
-*/
-
 .head {
   min-height: 70px;
-/*  background-color: rgb(251, 20, 115);*/
+  /*  background-color: rgb(251, 20, 115);*/
   margin: 0; /* row margin workaround */
 }
 
@@ -202,6 +192,29 @@ background-color: white;
 
 .current-menu-item .nav-link{
   font-weight: bolder;
+}
+
+/* Feature Image */
+/*
+aspect ratio  | padding-bottom value
+--------------|----------------------
+16:9      |       56.25%
+4:3       |       75%
+3:2       |       66.66%
+8:5       |       62.5%
+*/
+.ratio-16_9 {
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.cover {
+  position: relative;
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  overflow: hidden;
 }
 
 /* Medien-Board Tabs */
