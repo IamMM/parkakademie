@@ -47,6 +47,7 @@ Template Name: Startseite
 <div class ="container">
 
   <!-- The Content -->
+  <hr>
   <div class="mt-3">
     <?php 
     $post_object = get_post( get_the_ID() );
