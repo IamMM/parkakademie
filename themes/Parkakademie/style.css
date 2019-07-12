@@ -243,8 +243,11 @@ aspect ratio  | padding-bottom value
 }
 
 /* Activity Boxes */
+.clickable {
+  cursor: pointer;
+}
 
-.activity-slide:hover {
+.clickable:hover {
   background-color: lightgray;
   transition: 500ms;
 }
