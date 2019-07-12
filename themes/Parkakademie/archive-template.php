@@ -35,7 +35,7 @@ Template Name: Archiv
     <?php if(have_posts()) : ?>
     <?php while(have_posts()) : the_post(); ?>   
 
-    <?php if (!is_category('lab')): ?>
+    <?php if (!has_category( $category = 'LAB', $post )): ?>
     
 
     <a href="<?php the_permalink() ?>">
