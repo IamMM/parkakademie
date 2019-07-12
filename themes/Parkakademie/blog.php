@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: LABs
+Template Name: Blog
 */
 ?>
 
@@ -22,7 +22,7 @@ Template Name: LABs
 
 
   <div id= "ajax" class="row">
-    <?php $query = new WP_Query( array( 'post_type' => 'lab' ) );; ?>
+    <?php $query = new WP_Query( array( 'post_type' => 'blog' ) );; ?>
     <?php if($query->have_posts()) : 
     while($query->have_posts()) : $query->the_post(); ?>   
 

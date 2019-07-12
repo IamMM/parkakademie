@@ -21,8 +21,7 @@ Template Name: Archiv
     <?php wp_list_categories( array(
   'orderby' => 'name',
   'title_li' => '',
-  'separator' => '|',
-  'exclude' => array(5)
+  'separator' => ', ',
 ) ); ?> 
   </ul>
 
@@ -33,10 +32,7 @@ Template Name: Archiv
 
   <div id= "ajax" class="row">
     <?php if(have_posts()) : ?>
-    <?php while(have_posts()) : the_post(); ?>   
-
-    <?php if (!has_category( $category = 'LAB', $post )): ?>
-    
+    <?php while(have_posts()) : the_post(); ?>       
 
     <a href="<?php the_permalink() ?>">
       <div class="col-md-4 col-sm-6 col-xs-12 clickable">
@@ -62,8 +58,6 @@ Template Name: Archiv
           <?php the_excerpt('20'); ?>
         </div><!-- .swiper-slide --></div>
     </a>
-    
-    <?php endif; ?>
     
     <?php endwhile; ?>
     <?php endif; ?> 
