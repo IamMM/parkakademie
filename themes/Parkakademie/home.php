@@ -7,42 +7,40 @@ Template Name: Startseite
 <?php get_header();?>
 
 <!-- The Featured Image Slide -->
-<div class="container">
 
-  <!-- Slider main container -->
-  <div class="swiper-container welcome-swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <?php
+<!-- Slider main container -->
+<div class="swiper-container welcome-swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <?php
 
-      // check if the repeater field has rows of data
-      if( have_rows('welcome_slider') ):
+    // check if the repeater field has rows of data
+    if( have_rows('welcome_slider') ):
 
-      // loop through the rows of data
-      while ( have_rows('welcome_slider') ) : the_row(); ?>
+    // loop through the rows of data
+    while ( have_rows('welcome_slider') ) : the_row(); ?>
 
-       <div class="swiper-slide ratio-16_9 cover" style="background-image:url(<?php echo the_sub_field('image'); ?>);">
+    <div class="swiper-slide ratio-16_9 cover" style="background-image:url(<?php echo the_sub_field('image'); ?>);">
 
-        <a class="welcome-text" href="<?php echo the_sub_field('link'); ?>">
-          <h2><?php echo the_sub_field('title'); ?></h2>
-          <p><?php echo the_sub_field('sub-title'); ?></p>
-        </a>
+      <a class="welcome-text" href="<?php echo the_sub_field('link'); ?>">
+        <h2><?php echo the_sub_field('title'); ?></h2>
+        <p><?php echo the_sub_field('sub-title'); ?></p>
+      </a>
 
-      </div><!-- .swiper-slide -->
-     
-      <?php endwhile;
+    </div><!-- .swiper-slide -->
 
-      else :
+    <?php endwhile;
 
-      // no rows found
+    else :
 
-      endif;
+    // no rows found
 
-      ?>
+    endif;
 
-    </div><!-- .swiper-wrapper -->
-  </div><!-- .swiper-container -->  
-</div>
+    ?>
+
+  </div><!-- .swiper-wrapper -->
+</div><!-- .swiper-container -->  
 
 <div class ="container">
 
