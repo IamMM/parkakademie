@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<div id="main-container" class="container">
+<div class="container">
   <!-- The Featured Image -->
     <div class="ratio-16_9 cover" style="background-image:url( <?php the_post_thumbnail_url('full'); ?>)"></div>
     <!--  <?php the_post_thumbnail_url('full', array('class' => 'img-fluid')); ?>-->
