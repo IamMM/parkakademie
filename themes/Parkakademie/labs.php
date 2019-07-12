@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Archiv
+Template Name: LABs
 */
 ?>
 
@@ -14,35 +14,25 @@ Template Name: Archiv
   $post_object = get_post( get_the_ID() );
   echo $post_object->post_content;
   ?>
+    <?php do_shortcode('[display-posts category="LAB"]'); ?>
 
-  <span class="inline">Kategorien: </span>
-  <!--List All Categories -->
-  <ul class="list-inline" style="display: inline-block;">
-    <?php wp_list_categories( array(
-  'orderby' => 'name',
-  'title_li' => '',
-  'separator' => '|',
-  'exclude' => array(5)
-) ); ?> 
-  </ul>
 
-  <!-- AKTIVITÄTEN Post Lop-->
+  <!-- LABs Post Lop-->
   <?php // Display blog posts on any page @ https://m0n.co/l
   $temp = $wp_query; $wp_query= null;
-  $wp_query = new WP_Query(); $wp_query->query('posts_per_page=-1' . '&paged='.$paged);?>
+  $wp_query = new WP_Query(); $wp_query->query('posts_per_page=20' . '&paged='.$paged);?>
+  
+  
+   <div id= "ajax" class="row">
+    <?php if(have_posts()) : 
+    // The Query
+    query_posts( array ( 'category_name' => 'lab', 'posts_per_page' => -1 ) );
+    while(have_posts()) : the_post(); ?>   
 
-  <div id= "ajax" class="row">
-    <?php if(have_posts()) : ?>
-    <?php while(have_posts()) : the_post(); ?>   
-
-    <?php if (!is_category('lab')): ?>
-    
-
-    <a href="<?php the_permalink() ?>">
-      <div class="col-md-4 col-sm-6 col-xs-12 clickable">
-        <!-- Activty Box has same style than swiper slide -->
-        <div class="swiper-slide">
-
+    <div class="col-md-6 col-xs-12 clickable">
+      <!-- Activty Box has same style than swiper slide -->
+      <div class="swiper-slide">
+        <a href="<?php the_permalink() ?>">
           <div class="activity-img-container" style="background-image: url(<?php the_post_thumbnail_url( 'large' ); ?>"></div>
           <h3 class="mt-2"><?php the_title(); ?></h3>
 
@@ -59,17 +49,17 @@ Template Name: Archiv
             }
             ?>
           </small>
-          <?php the_excerpt('20'); ?>
-        </div><!-- .swiper-slide --></div>
-    </a>
-    
-    <?php endif; ?>
-    
-    <?php endwhile; ?>
-    <?php endif; ?> 
-  </div>
-      <?php load_more_button(); ?>
+          <?php the_excerpt('20'); ?></a>
+      </div><!-- .swiper-slide --></div>
 
+    <?php endwhile; ?>
+    <?php wp_reset_query(); ?>
+    <?php endif; ?>
+     
+  </div>
+<?php load_more_button(); ?> 
+
+ 
 </div>
 
 <?php get_footer();?>

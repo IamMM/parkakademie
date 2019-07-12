@@ -329,3 +329,6 @@ footer ul {
     max-height: 50px;
   }
 }
+.list-inline li{
+  display: inline-block;
+}
