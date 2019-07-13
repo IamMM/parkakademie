@@ -21,7 +21,7 @@ Template Name: Blog
   $wp_query = new WP_Query(); $wp_query->query('posts_per_page=20' . '&paged='.$paged);?>
 
 
-  <div id= "ajax" class="row">
+  <div class="row">
     <?php $query = new WP_Query( array( 'post_type' => 'blog' ) );; ?>
     <?php if($query->have_posts()) : 
     while($query->have_posts()) : $query->the_post(); ?>   
@@ -54,9 +54,6 @@ Template Name: Blog
     <?php endif; ?>
 
   </div>
-  <?php load_more_button(); ?> 
-
-
 </div>
 
 <?php get_footer();?>

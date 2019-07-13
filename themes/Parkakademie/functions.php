@@ -64,7 +64,7 @@ function wpdocs_codex_LAB_init() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'LAB' ),
+        'rewrite'            => array( 'slug' => 'lab' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
@@ -83,7 +83,7 @@ add_action( 'init', 'wpdocs_codex_LAB_init' );
  *
  * @see get_post_type_labels() for Eintragel keys.
  */
-function wpdocs_codex_Eintrag_init() {
+function wpdocs_codex_Blog_init() {
     $labels = array(
         'name'                  => _x( 'Blog', 'Post type general name', 'textdomain' ),
         'singular_name'         => _x( 'Eintrag', 'Post type singular name', 'textdomain' ),
@@ -94,8 +94,8 @@ function wpdocs_codex_Eintrag_init() {
         'new_item'              => __( 'Neuer Eintrag', 'textdomain' ),
         'edit_item'             => __( 'Eintrag bearbeiten', 'textdomain' ),
         'view_item'             => __( 'Eintrag anzeigen', 'textdomain' ),
-        'all_items'             => __( 'Alle Blog', 'textdomain' ),
-        'search_items'          => __( 'Blog suchen', 'textdomain' ),
+        'all_items'             => __( 'Alle Einträge', 'textdomain' ),
+        'search_items'          => __( 'Blog durchsuchen', 'textdomain' ),
         'parent_item_colon'     => __( 'Parent Blog:', 'textdomain' ),
         'not_found'             => __( 'Keine Blog gefunden.', 'textdomain' ),
         'not_found_in_trash'    => __( 'Keine Blog im Papierkorb gefunden.', 'textdomain' ),
@@ -118,7 +118,7 @@ function wpdocs_codex_Eintrag_init() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'Eintrag' ),
+        'rewrite'            => array( 'slug' => 'blog' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
@@ -128,6 +128,7 @@ function wpdocs_codex_Eintrag_init() {
  
     register_post_type( 'blog', $args );
 }
- 
-add_action( 'init', 'wpdocs_codex_Eintrag_init' );
+
+add_action( 'init', 'wpdocs_codex_Blog_init' );
+
 ?>

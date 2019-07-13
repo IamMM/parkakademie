@@ -15,27 +15,30 @@ Template Name: Archiv
   echo $post_object->post_content;
   ?>
 
-  <span class="inline">Kategorien: </span>
-  <!--List All Categories -->
-  <ul class="list-inline" style="display: inline-block;">
-    <?php wp_list_categories( array(
+  <!-- List All Categories to be done -->
+  <!--
+<span class="inline">Kategorien: </span>
+<ul class="list-inline" style="display: inline-block;">
+<?php wp_list_categories( array(
   'orderby' => 'name',
   'title_li' => '',
   'separator' => ', ',
 ) ); ?> 
-  </ul>
+</ul>
+-->
 
   <!-- AKTIVITÄTEN Post Lop-->
   <?php // Display blog posts on any page @ https://m0n.co/l
   $temp = $wp_query; $wp_query= null;
   $wp_query = new WP_Query(); $wp_query->query('posts_per_page=-1' . '&paged='.$paged);?>
 
-  <div id= "ajax" class="row">
+  <div class="row">
     <?php if(have_posts()) : ?>
     <?php while(have_posts()) : the_post(); ?>       
 
-    <a href="<?php the_permalink() ?>">
-      <div class="col-md-4 col-sm-6 col-xs-12 clickable">
+
+    <div class="col-md-4 col-sm-6 col-xs-12 clickable">
+      <a href="<?php the_permalink() ?>">
         <!-- Activty Box has same style than swiper slide -->
         <div class="swiper-slide">
 
@@ -45,25 +48,25 @@ Template Name: Archiv
           <!-- List Categories -->
           <small><?php 
             $categories = get_the_category();
-            $separator = ' ';
+            $separator = ' | ';
             $output = '';
             if ( ! empty( $categories ) ) {
               foreach( $categories as $category ) {
-                $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separator;
+                $output .= esc_html( $category->name ) . $separator;
               }
               echo trim( $output, $separator );
             }
             ?>
           </small>
           <?php the_excerpt('20'); ?>
-        </div><!-- .swiper-slide --></div>
-    </a>
-    
+        </div><!-- .swiper-slide -->
+      </a>
+    </div>
+
+
     <?php endwhile; ?>
     <?php endif; ?> 
   </div>
-      <?php load_more_button(); ?>
-
 </div>
 
 <?php get_footer();?>
