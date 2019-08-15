@@ -3,6 +3,10 @@ li.event {
   padding: 1em 0;
 }
 
+li.event:first-child {
+  border: none;
+}
+
 .event-list 
 .startdate, 
 .event-list 
