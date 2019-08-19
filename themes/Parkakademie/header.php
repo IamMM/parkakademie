@@ -10,9 +10,12 @@
 
     <title><?php bloginfo('name'); ?> | 
       <?php is_front_page() ? bloginfo('description') : wp_title(); ?></title>
+      
+    <!-- Bootstrap 4.0.0 -->
+    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap/bootstrap.min.css">
 
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <!-- Swiper 4.5.0 -->
+    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/swiper.min.css">
 
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
